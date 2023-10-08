@@ -19,6 +19,8 @@
 
 </div>
 
+> **NOTE:** This repository is a clone of the [official libfprint repository](https://gitlab.freedesktop.org/libfprint/libfprint) where I have added a prototype of the `egismoc` driver. See <https://gitlab.freedesktop.org/libfprint/libfprint/-/issues/569> for more details.
+
 ## History
 
 **LibFPrint** was originally developed as part of an
