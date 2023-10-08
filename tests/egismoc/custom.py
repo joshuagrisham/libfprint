@@ -101,8 +101,8 @@ assert d.get_finger_status() == FPrint.FingerStatusFlags.NONE
 try:
     d.enroll_sync(template, None, enroll_progress, None)
 except GLib.Error as error:
-    error.matches(FPrint.DeviceError.quark(),
-                  FPrint.DeviceError.DATA_DUPLICATE)
+    assert error.matches(FPrint.DeviceError.quark(),
+                         FPrint.DeviceError.DATA_DUPLICATE)
 except Exception as exc:
     raise
 assert d.get_finger_status() == FPrint.FingerStatusFlags.NONE
